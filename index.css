@@ -11,8 +11,8 @@ body{
 }
 .container{
     background-color: rgb(68, 89, 99);
-    width: 65vmin;
-    height: 70vmin;
+    width: 30em;
+    height: 35em;
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -61,4 +61,15 @@ body{
 }
 .controls img:hover{
     background-color: grey;
+}
+
+@media (max-width:500px) {
+    html,body{
+        font-size: 13px;
+    }
+}
+@media (max-width:400px) {
+    html,body{
+        font-size: 11px;
+    }
 }
