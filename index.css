@@ -14,7 +14,7 @@ body{
 .container{
     background-color: rgb(68, 89, 99);
     width: 30em;
-    height: 35em;
+    height: 40em;
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -31,8 +31,8 @@ body{
     padding: .4em;
 }
 .play{
-    width: 100%;
-    height: 100%;
+    width: 30em;
+    height: 30em;
     display: grid;
     grid-template: repeat(30,1fr)/repeat(30,1fr);
     position: relative;
@@ -57,12 +57,15 @@ body{
     justify-content: space-evenly;
     background-color: wheat;
     position: relative;
-    width: 100%;
+    width: 30em;
+    height: 10em;
     bottom: 0;
 }
 .controls img{
     padding: 3px 5px;
     text-align: center;
+    width: 3em;
+    height: 3em;
 }
 .controls img:hover{
     background-color: grey;
@@ -92,5 +95,10 @@ body{
 @media (max-width:500px) {
     html,body{
         font-size: 13px;
+    }
+}
+@media (max-width:400px) {
+    html,body{
+        font-size: 11px;
     }
 }
