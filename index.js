@@ -23,8 +23,7 @@ const start=()=>{
         scoreupdate.innerHTML=score+=5;
         highscore = score>highscore? score:highscore;
         localStorage.setItem("highscoreupdate",highscore);
-        
-        console.log(highscore);
+
         snakebody.push([foodX,foodY]);
     }
     for(let i=snakebody.length-1;i>0;i--){
